@@ -10,5 +10,6 @@ namespace soft_renderer
   public:
     void parse_arguments(int argc, char** argv);
     void print();
+    void load();
   };
 }

@@ -1,4 +1,5 @@
 #include "renderer.h"
+#include "model.h"
 #include <iostream>
 
 using namespace std;
@@ -26,5 +27,10 @@ namespace soft_renderer
   {
     cout << "model: " << model_name << endl;
     cout << "texture: " << texture_name << endl;
+  }
+
+  void CRenderer::load()
+  {
+    CModel(model_name, texture_name);
   }
 }
